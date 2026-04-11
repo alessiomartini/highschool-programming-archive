@@ -1,0 +1,42 @@
+MPASM 5.75  /HOME/ALESSIOMARTINI/SCRIVANIA/V   11-17-2017  13:05:39         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001     ;CICLO MARTINI ALESSIO 3TA (versione minima)
+                      00002     UDATA_ACS
+                      00003     
+000000                00004 num res 1
+000001                00005 cnt res 1
+                      00006  
+                      00007     CODE 0
+000000 6A??           00008     clrf num
+000002                00009 azzera  
+000002 0E05           00010     movlw 0x05
+                      00011     
+000004                00012 ripeti
+                      00013     
+000004 06??           00014     decf num
+000006 E0??           00015     bz azzera
+000008 E1??           00016     bnz ripeti
+                      00017         
+00000A 0003           00018     sleep
+                      00019     END
+MPASM 5.75  /HOME/ALESSIOMARTINI/SCRIVANIA/V   11-17-2017  13:05:39         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__18F26K20                        00000001
+azzera                            00000002
+cnt                               00000001
+num                               00000000
+ripeti                            00000004
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+

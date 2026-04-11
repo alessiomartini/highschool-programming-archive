@@ -1,0 +1,800 @@
+/*Mobile Improvements Project Styles*/
+
+/*Mobile Improvements Header Styles*/
+@media only screen and (max-width: 1024px) {
+    .mobile-header-links {
+        padding: 5px;
+    }
+
+    .mobile-logo {
+        float: left;
+    }
+
+    .mobile-nav-toggle, .toggle-search {
+        color: #CD234C;
+        background: #FFF center center no-repeat;
+        border: 0;
+        margin-right: 5px;
+    }
+
+    .container-mobile-header, .container-mobile-search {
+        overflow: auto;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .container-mobile-header {
+        top: 0;
+        padding: 2px;
+    }
+    .container-mobile-search {
+        top: 45px;
+    }
+    .mobile-header-wrap, .tablet-header-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    .content-container-body {
+        width: 100%;
+    }
+
+    .mobile-header-wrap {
+        margin-top: 5px;
+    }
+
+    .mobile-header-links, .mobile-nav-toggle {
+        padding: 2px;
+        font-size: .8em;
+    }
+
+    .tablet-header-wrap {
+        display: none;
+    }
+
+    .mobile-header-links svg {
+        margin-right: 5px;
+    }
+
+    .container-interior-hero {
+        height: 5em;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 510px) and (max-width: 1024px) {
+    .mobile-header-wrap {
+        display: none;
+    }
+
+    .tablet-header-wrap {
+        margin-top: 8px;
+    }
+
+    .tablet-header-wrap .mobile-header-links {
+        border-right: solid 1px;
+        padding: 5px 10px;
+    }
+
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article-container::after {
+        content: "";
+        flex: 0 0 33%;
+    }
+
+    .container-interior-hero {
+        height: 9em;
+        margin-top: 50px;
+    }
+}
+
+/*HOMEPAGE STYLES*/
+
+@media only screen and (max-width: 1024px) {
+
+    .container-hero {
+        height: 120px;
+        margin-top: 25px;
+    }
+    .item-hero-content {
+        top: 20px;
+    }
+
+    .homepage-links a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .homepage-links svg {
+        margin-left: 5px;
+    }
+
+    #homepage-link1-list, #homepage-link2-list {
+        padding-bottom: 15px;
+        flex: 0 0 100%;
+    }
+
+    #homepage-link1-list a {
+        padding: 5px;
+        background: #819d52;
+    }
+
+    .tribe-mini-calendar-event {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-bottom: none !important;
+        border-bottom: solid #565759;
+    }
+    .tribe-mini-calendar-event:last-child {
+        border-bottom: none;
+    }
+    .tribe-mini-calendar-event .list-info h2 {
+        margin: 0 !important;
+    }
+
+    #homepage-link2-list .tribe-events-duration, #homepage-link2-list .tribe-events-title {
+        flex: 0 0 47%;
+    }
+
+    .tribe-events-duration {
+        font-family: 'DIN_1451 LT W01 Engschrift', sans-serif;
+        text-transform: lowercase;
+        color: #223e99;
+    }
+
+    #homepage-link2-list .tribe-events-title a {
+        background: #223e99;
+        font-family: 'DIN_1451 LT W01 Engschrift', sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    #homepage-link2-list .tribe-events-title {
+        color: white;
+    }
+
+    #homepage-link2-list .list-date {
+        display: none;
+    }
+
+    #homepage-link2-list .list-info {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .homepage-link-inner {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .homepage-link-inner svg {
+        padding: 0;
+        float: none;
+    }
+
+    .homepage-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .homepage-links > a {
+        flex: 0 0 46%;
+        margin: 2% 1%;
+    }
+
+    .homepage-links .heading {
+        font-size: 2em;
+        color: #CD234C;
+        font-weight: bold;
+        text-transform: lowercase;
+        flex: 0 0 100%;
+        border-top: solid #565759;
+        padding-top: 15px;
+    }
+
+    /*.homepage-feature-container {*/
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-between;*/
+        /*border-bottom: solid #565759;*/
+        /*padding-bottom: 25px;*/
+    /*}*/
+
+    /*#homepage-feature-1, #homepage-feature-3 {*/
+        /*flex: 0 0 48%;*/
+        /*display: inline-block;*/
+    /*}*/
+
+    /*#homepage-feature-1 {*/
+        /*margin-right: 1%;*/
+    /*}*/
+
+    /*#homepage-feature-3 {*/
+        /*margin-left: 1%;*/
+        /*float: right;*/
+    /*}*/
+
+    .mobile-title:before {
+        width: 100%;
+    }
+
+    .exhibit-item-listing .faux-link {
+        border: solid 1px;
+        padding: 5px;
+        text-align: center;
+        margin: 10px 5px 0 5px;
+    }
+
+    .container-interior-right {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .item-right-feature {
+        flex: 0 1 30%;
+        padding: 2%;
+    }
+
+    .single-exhibit .btn-calendar-back {
+        font-size: 1.2em;
+        padding: 5px;
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .homepage-link-inner > a {
+        flex: 0 0 27%;
+    }
+
+    /*#homepage-feature-1, #homepage-feature-3 {*/
+        /*width: 47%;*/
+        /*margin: 1%;*/
+    /*}*/
+
+    .container-interior-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-right-feature {
+        flex: 0 1 45%;
+        padding: 2%;
+    }
+}
+
+/*SUB PAGE STYLES*/
+
+@media only screen and (max-width: 1024px) {
+
+    .wrapper {
+        font-size: 18px;
+    }
+
+    .dropdown-links-container > a {
+        flex: 0 0 45%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        wrap: nowrap;
+        color: #fff;
+        background: #CD234C;
+        font-size: 18px;
+        padding: 10px 0;
+        margin: 13px 2%;
+        text-align: center;
+        text-transform: lowercase;
+        -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    }
+
+    .dropdown-links svg {
+        float: left;
+        padding: 5px 0 0 10px;
+    }
+
+    .dropdown-links-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-container-thankyou h3 a:after {
+        content: "\f060";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        display: inline-block;
+        color: #CD234C;
+        margin-left: 15px;
+    }
+}
+
+/*Dropdown Functionality and Styles*/
+
+@media only screen and (max-width: 1024px) {
+    .exhibit-listing-summary a.btn-toggle svg,
+    .event-listing-summary a.btn-toggle svg,
+    .article-container {
+        -webkit-transition: 500ms ease-in-out;
+        -moz-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+    }
+    .exhibit-listing-summary a.btn-toggle svg, .event-listing-summary a.btn-toggle svg {
+	    position: relative;
+	}
+    .exhibit-listing-summary.is-open a.btn-toggle svg, .event-listing-summary.is-open a.btn-toggle svg, .exhibit-item-listing.is-open a.btn-toggle svg {
+		transform: rotate(180deg);
+    }
+
+/*
+    .article-container .content, .buttons .btn-close, .excerpt .img-resize {
+        display: none;
+        visibility: hidden;
+    }
+
+    [id^="article"]:target section, [id^="article"]:target .excerpt .img-resize {
+        display: block;
+        visibility: visible;
+        width: auto;
+        float: none;
+    }
+
+    [id^="article"]:target .btn-open, [id^="article"]:target .excerpt > img {
+        display: none;
+        visibility: hidden;
+    }
+
+    [id^="article"]:target .btn-close, [id^="article"]:target .excerpt .img-resize {
+        display: block;
+        visibility: visible;
+    }
+*/
+
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    article.exhibit-listing-summary {
+        display: flex;
+        padding: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .exhibit-listing-summary h2 {
+        text-transform: lowercase;
+    }
+
+    .exhibit-listing-summary > svg {
+        margin-right: 15px;
+        font-size: 2em;
+        width: 1.25em !important;
+    }
+
+    .exhibit-listing-summary section.excerpt {
+        max-width: 160px;
+    }
+
+    .exhibit-listing-summary section.content {
+        margin-top: 10px;
+    }
+
+    .exhibit-listing-summary nav.buttons {
+        margin-left: auto;
+    }
+
+    .faux-link {
+        font-size: 1.2em;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .faux-link svg {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 510px) and (max-width: 1024px) {
+    .exhibit-listing-summary section.excerpt {
+        max-width: 105px;
+    }
+
+    .article-container .exhibit-listing-summary {
+        flex: 0 0 40%;
+    }
+
+    .exhibit-listing-summary h2 {
+        font-size: 1.5em;
+    }
+
+    .single-exhibit .btn-calendar-back {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .article-container .exhibit-listing-summary {
+        flex: 0 0 28%;
+    }
+}
+
+/* EXHIBIT PAGE STYLE*/
+
+@media only screen and (max-width: 1024px) {
+
+    .container-interior-header {
+        padding-bottom: 5px;
+    }
+
+    #articlesearch {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #articlesearch section.content {
+        flex: 0 0 100%;
+        margin-left: 5px;
+    }
+
+    #articlesearch nav.buttons {
+        padding: 7px 10px;
+    }
+
+    .container-interior-left {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .article-container .exhibit-item-listing {
+        flex: 0 0 30%;
+        background: #b4b9be85;
+        padding: 1%;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        align-items: flex-start;
+    }
+
+    .article-container .exhibit-item-listing h2 {
+        line-height: 1.1em;
+        font-size: 1.5em;
+        padding-left: 10px;
+    }
+
+    .article-container .exhibit-item-listing p {
+        padding: 10px;
+    }
+
+    /*.container-interior-left [id^="article"]:target {*/
+        /*flex: 0 1 100%;*/
+    /*}*/
+
+    .dates-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .calendar-detail-bar {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .calendar-detail-bar h1 {
+        margin: 0;
+    }
+
+    .exhibit-dates-container {
+        flex: 0 0 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .calendar-listing-date {
+        font-size: 18px;
+    }
+
+    .calendar-listing-date .fa-4x {
+        margin-bottom: 5px;
+    }
+
+    .exhibit-item-listing nav.buttons {
+        margin-right: 7px;
+    }
+
+    [id^="article"]:target .calendar-listing-date span {
+        display: inline-block;
+    }
+
+    .calendar-detail-date {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    .article-container .exhibit-item-listing {
+        flex: 0 0 100%;
+    }
+
+    .article-container .exhibit-item-listing h2 {
+        font-size: 1.3em;
+    }
+
+    .calendar-listing-date {
+        font-size: 14px;
+        flex: 0 0 22%;
+    }
+
+    .calendar-detail-bar {
+        flex-wrap: wrap;
+    }
+
+    .calendar-detail-bar h1 {
+        padding-bottom: 15px;
+    }
+
+    .exhibit-dates-container {
+        flex: 0 0 100%;
+    }
+}
+
+/*Mobile Improvements Calendar and Events Styles*/
+
+@media only screen and (max-width: 1024px) {
+
+    .calendar-search h1:before {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 900;
+        margin-right: 15px;
+    }
+
+    .calendar-search h1 {
+        font-size: 20px;
+        display: inline-flex;
+    }
+
+    .calendar-search > h1 {
+        margin: 15px;
+    }
+
+    .calendar-search .btn-open h1:before {
+        content: "\f002";
+    }
+
+    .calendar-search .btn-close h1:before {
+        content: "\f102";
+    }
+
+    .calendar-listing-date {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .tribe-events-loop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item-calendar-listing .calendar-listing-excerpt {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calendar-listing-photo {
+        flex: 0 0 70%;
+    }
+
+    .calendar-listing-summary {
+        flex: 0 0 100%;
+        font-size: 18px;
+        margin: 0 10px 20px 0;
+    }
+
+    .calendar-listing-summary p {
+        margin-bottom: 0;
+    }
+
+    .tribe-events-category-yoga .calendar-listing-photo img {
+        border: none;
+    }
+
+    .icon-calendar-empty,
+    .calendar-day {
+        position: absolute;
+    }
+
+    .calendar-listing-date {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .calendar-listing-date .buttons {
+        margin-top: auto;
+        padding-top: 15px;
+    }
+
+    .calendar-listing-date .date-day {
+        padding-top: 10px;
+    }
+
+    .calendar-listing-date h3 {
+        padding: 0;
+    }
+
+    .calendar-listing-photo h2 {
+        margin: 0 0 15px 0;
+    }
+
+    .calendar-listing-photo img {
+        border: none !important;
+    }
+
+    .calendar-filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .calendar-filter-list > li > a {
+        padding: 5px;
+    }
+
+    .calendar-detail-date {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .calendar-detail-divider {
+        align-self: center;
+    }
+
+    .calendar-detail-day {
+        text-align: center;
+    }
+
+    .calendar-detail-day .date-day {
+        display: block;
+        padding-top: 5px;
+    }
+    .drop-shadow {
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    .tribe-events-list .type-tribe_events {
+        flex: 0 0 100%;
+        border-bottom: solid;
+    }
+
+    .calendar-filter-list li {
+        flex: 0 0 48%;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (min-width: 510px) and (max-width: 1024px) {
+    .calendar-filter-list li {
+        flex: 0 0 32%;
+        align-self: flex-start;
+    }
+
+    .tribe-events-list .type-tribe_events {
+        flex: 0 0 45%;
+    }
+
+    .tribe-events-list .type-tribe_events:first-of-type {
+        margin: 0 !important;
+    }
+
+    .calendar-detail-date {
+        flex: 0 0 50%;
+    }
+}
+
+/*Mobile Improvements General Styles*/
+@media only screen and (max-width: 1024px) {
+    .btn-calendar-back {
+        padding: .5em;
+        font-size: 25px;
+    }
+}
+
+/*Mobile Improvements Footer Styles*/
+@media only screen and (max-width: 1024px) {
+
+    .aux-footer.m-visible {
+        margin-top: 25px;
+    }
+
+    .aux-footer .heading {
+        font-size: 2em;
+    }
+
+    .aux-footer p span {
+        font-size: 14px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .aux-footer .location svg {
+        margin-right: 5px;
+    }
+
+    .aux-footer .location {
+        font-size: 1.3em;
+    }
+
+    .aux-footer .location .address {
+        font-size: .8em;
+    }
+
+    .aux-footer .location .phone span {
+        margin-right: 10px;
+    }
+
+    .aux-footer .location .phone span, .aux-footer .location .email span {
+        padding-right: 15px;
+        border-right: 1px solid #FFF;
+
+    }
+
+    .aux-footer .location .email span {
+        margin-right: 15px;
+    }
+
+    .aux-footer #md_optin_email {
+        width: 220px;
+        font-size: 18px;
+    }
+    .item-footer-disclaimer {
+        margin: none;
+    }
+}

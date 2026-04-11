@@ -1,0 +1,37 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Fri Nov 17 11:24:36 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                    .code       code   0x000000    program   0x00001e
+                   .cinit    romdata   0x00001e    program   0x000002
+                   .udata      udata   0x000f00       data   0x000004
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00001f      
+            32 out of 66584 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      add   0x000f01       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+                      num   0x000f00       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+                    somma   0x000f02       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      num   0x000f00       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+                      add   0x000f01       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+                    somma   0x000f02       data     static /home/alessiomartini/Scrivania/Verifica17_11_2017MartiniAlessio3TA.X/Somma di due Variabili.asm
+
+

@@ -1,0 +1,61 @@
+MPASM 5.75  /HOME/ALESSIOMARTINI/SCRIVANIA/V   11-17-2017  12:24:38         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;MARTINI ALESSIO SOMMA DI DUE VARIABILI (versione avanzata)
+                      00002     
+                      00003     
+Warning[205]: Found directive in column 1. (UDATA)
+                      00004 UDATA 
+Warning[207]: Found label after column 1. (num)
+000000                00005     num res 1
+Warning[207]: Found label after column 1. (add)
+000001                00006     add res 1
+                      00007     
+                      00008 
+Warning[207]: Found label after column 1. (somma)
+000002                00009     somma res 2
+                      00010  
+Warning[205]: Found directive in column 1. (CODE)
+                      00011 CODE  0
+000000 010?           00012     BANKSEL num
+000002 0102           00013     movlb 2
+000004 0E02           00014     movlw 0x02              ;mettere valori nelle due variabili
+000006 6F00           00015     movwf num,1
+000008 0EFF           00016     movlw 0xFF
+00000A 6F00           00017     movwf add,1
+                      00018     
+00000C 50??           00019     movf num,w
+00000E 24??           00020     addwf add,w
+                      00021     
+                      00022  
+000010 010?           00023     BANKSEL somma
+000012 0101           00024     movlb 1
+000014 6F00           00025     movwf somma,1
+000016 0E00           00026     movlw 0
+000018 6A??           00027     clrf somma+1
+00001A 22??           00028     addwfc somma+1,F
+                      00029     
+00001C 0003           00030     sleep
+Warning[205]: Found directive in column 1. (END)
+                      00031 END
+MPASM 5.75  /HOME/ALESSIOMARTINI/SCRIVANIA/V   11-17-2017  12:24:38         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__18F26K20                        00000001
+__DEBUG                           
+__MPLAB_DEBUGGER_SIMULATOR        1
+add                               00000001
+num                               00000000
+somma                             00000002
+
+Errors   :     0
+Warnings :     6 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
