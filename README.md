@@ -85,11 +85,11 @@ python3 "Repos/Realtime Plot.py"   # needs a file named `data` in the cwd
 
 `.X` is the NetBeans project-folder suffix used by the school's toolchain (the
 same convention as the MPLAB X projects in
-[`MPLAB_X`](https://github.com/alessiomartini/MPLAB_X)); `dist/`, `build/` and
+[`pic18-assembly-projects`](https://github.com/alessiomartini/pic18-assembly-projects)); `dist/`, `build/` and
 `nbproject/` inside them are IDE output. The `.DS_Store` files came from the
 macOS machine the folder passed through.
 
 ## Related repository
 
-- [`MPLAB_X`](https://github.com/alessiomartini/MPLAB_X) — the electronics half
+- [`pic18-assembly-projects`](https://github.com/alessiomartini/pic18-assembly-projects) — the electronics half
   of the same years: PIC18 assembly programs from the same school.
